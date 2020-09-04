@@ -1,0 +1,53 @@
+/*
+    INSTRUCTIONS
+
+    Recreate this button: https://i.postimg.cc/NfDqhzxc/star-button.png using CSS properties alone. Feel free to use Google but be prepared to explain your solution. When you're done please fork the Codepen and send us the new link.
+
+  Tip: If you feel that using Sass/LESS/Stylus will help you, please feel free to hit the cog image next to 'CSS' to import the appropriate code base and libraries. You will then be able to code using your preferred choice in this box.
+
+*/
+
+a {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+
+  display: flex;
+  align-items: center;
+
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  text-align: center;
+  text-shadow: 0.3px 0.5px white; 
+  color: #555555;
+
+  padding: 8px;
+  border: 1.3px solid rgb(163, 162, 162);
+  border-radius: 8px;
+  background: linear-gradient(to top, rgb(202, 202, 202) 55%, rgb(219, 218, 218) 45%);
+}
+
+a:before {
+  content: "";
+  z-index: -1;
+  
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  
+  border: 1.3px solid #838381;
+  border-radius: 13px;
+  background-color: rgb(230, 228, 228);
+  box-shadow: 0 0 0 1px inset white;
+}
+
+span {
+  margin: 0px 10px;
+  font-size: 0.75em;
+}
+
